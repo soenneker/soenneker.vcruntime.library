@@ -1,0 +1,12 @@
+<Project>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\tools\Resources\win-x64\vcruntime\*">
+      <Link>Resources\win-x64\vcruntime\%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <Visible>false</Visible>
+      <Pack>false</Pack>
+    </None>
+  </ItemGroup>
+</Project>
